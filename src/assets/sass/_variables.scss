@@ -1,0 +1,36 @@
+:root {
+  // main color
+  --primary: #000000;
+  --secondary: #16161d;
+  --tertiary: #3d3d3d;
+
+  // text color
+  --light: #f5f6fa;
+  --medium: #2c3a47;
+  --dark: #333;
+
+  // utils => button, border, words etc
+  --success: #06ad3e;
+  --danger: #ea2027;
+  --info: #3867d6;
+  --warning: #fbc531;
+  --hint: #95a5a6;
+
+  // utils => border, words etc
+  --accent: #3c40c6;
+  --divider: #bdc3c7;
+
+  // footer => background, text etc
+  --je: #0c090a;
+  --footer: #4b6584;
+
+  // font-family
+  --basic: "Mulish", sans-serif;
+  --default: "Roboto", sans-serif;
+  --logo: "Roboto Condensed", sans-serif;
+  --form: Arial, Helvetica, sans-serif;
+
+  // shadow
+  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),
+    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);
+}
