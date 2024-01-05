@@ -1,8 +1,101 @@
+@use "./media-queries" as *;
+
 header {
-  background-color: var(--primary);
   color: var(--light);
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  font-weight: bold;
+  @include phone {
+    background-color: var(--primary);
+  }
+  @include tablet {
+    background-color: var(--primary);
+  }
+  @include laptop {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  @include computer {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #container-header {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    @include laptop {
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin-top: 1rem;
+      border: 0.2rem var(--primary) solid;
+      border-radius: 0.5rem;
+    }
+    @include computer {
+      width: 120rem;
+      position: fixed;
+      margin-top: 7rem;
+      border: 0.2rem var(--primary) solid;
+      border-radius: 0.5rem;
+    }
+    .container-logo {
+      display: flex;
+      align-items: flex-end;
+      width: 12rem;
+      padding: 0.5rem;
+      margin-left: 1rem;
+      border-radius: 0.3rem;
+      justify-content: space-between;
+      cursor: pointer;
+      transition: all 0.2s;
+      .logo-image {
+        img {
+          height: 2.5rem;
+          width: 2.5rem;
+          border: 0.1rem var(--light) solid;
+          float: right;
+        }
+      }
+      &:hover {
+        transition: all 0.2s;
+        background-color: var(--light);
+        color: var(--je);
+        img {
+          border: 0.1rem var(--primary) solid;
+        }
+      }
+    }
+
+    #container-menu {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 55rem;
+      li {
+        cursor: pointer;
+        padding: 0.5rem;
+        transition: all 0.2s;
+      }
+      li:hover {
+        transition: all 0.2s;
+        background-color: var(--light);
+        color: var(--dark);
+        border-radius: 0.3rem;
+        .icon-frontend {
+          color: var(--frontend);
+        }
+        .icon-backend {
+          color: var(--backend);
+        }
+        .icon-fullstack {
+          color: var(--fullstack);
+        }
+        .icon-contact {
+          color: var(--contact);
+        }
+      }
+    }
+  }
 }

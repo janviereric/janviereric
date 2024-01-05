@@ -8,7 +8,7 @@ body {
   display: grid;
   grid:
     "header" auto
-    "content" 1fr
+    "main" 1fr
     "footer" auto /
     auto;
 }
