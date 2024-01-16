@@ -50,6 +50,12 @@ header {
       justify-content: space-between;
       cursor: pointer;
       transition: all 0.2s;
+      @include phone {
+        width: 3.5rem;
+      }
+      @include tablet {
+        display: 3.5rem;
+      }
       .logo-image {
         img {
           height: 2.5rem;
@@ -66,6 +72,11 @@ header {
           border: 0.1rem var(--primary) solid;
         }
       }
+      .text-menu {
+        @include phone {
+          display: none;
+        }
+      }
     }
 
     #container-menu {
@@ -73,6 +84,12 @@ header {
       justify-content: space-evenly;
       align-items: center;
       width: 55rem;
+      @include phone {
+        width: 30rem;
+      }
+      @include tablet {
+        width: 30rem;
+      }
       li {
         cursor: pointer;
         padding: 0.5rem;
@@ -94,6 +111,28 @@ header {
         }
         .icon-contact {
           color: var(--contact);
+        }
+      }
+      i {
+        @include phone {
+          width: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        @include tablet {
+          width: 2rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      .text-menu {
+        @include phone {
+          display: none;
+        }
+        @include tablet {
+          display: none;
         }
       }
     }

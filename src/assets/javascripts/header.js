@@ -9,13 +9,13 @@ export const header = () => {
         <div class="logo-image">
             <img src="${janviereric}" alt="Janvier Eric" />
         </div>
-        <div class="logo-name">JanvierEric</div>
+        <div class="logo-name"><span class="text-menu">JanvierEric</span></div>
       </div>
       <ul id="container-menu">
-        <li><i class="fa-solid fa-desktop icon-frontend"></i> FrontEnd </li>
-        <li><i class="fa-solid fa-server icon-backend"></i> BackEnd </li>
-        <li><i class="fa-solid fa-database icon-fullstack"></i> FullStack </li>
-        <li><i class="fa-solid fa-envelope icon-contact"></i> Contact </li>
+        <li><i class="fa-solid fa-desktop icon-frontend"></i><span class="text-menu"> FrontEnd </span></li>
+        <li><i class="fa-solid fa-server icon-backend"></i><span class="text-menu"> BackEnd </span></li>
+        <li><i class="fa-solid fa-database icon-fullstack"></i><span class="text-menu"> FullStack </span></li>
+        <li><i class="fa-solid fa-envelope icon-contact"></i><span class="text-menu"> Contact </span></li>
       </ul>
     </div>
   `;
