@@ -10,5 +10,3 @@ export const footer = () => {
         </p>
         `;
 };
-
-footer();
