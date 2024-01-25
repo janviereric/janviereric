@@ -1,5 +1,4 @@
-import "./assets/sass/exports.scss";
 import "./index.scss";
-import { header } from "/assets/javascripts/exports.js";
 
-header();
+export { header } from "./assets/javascripts/header.js";
+export { footer } from "./assets/javascripts/footer.js";

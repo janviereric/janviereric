@@ -1,6 +1,9 @@
-main {
-  color: var(--light);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+@use "./assets/sass/reset.scss" as *;
+@use "./assets/sass/_variables.scss" as *;
+@use "./assets/sass/_classes.scss" as *;
+@use "./assets/sass/_media-queries.scss" as *;
+
+@use "./assets/sass/_body.scss" as *;
+@use "./assets/sass/_header.scss" as *;
+@use "./assets/sass/_main.scss" as *;
+@use "./assets/sass/_footer.scss" as *;

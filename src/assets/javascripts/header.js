@@ -1,5 +1,4 @@
-import "/assets/sass/exports.scss";
-import janviereric from "/assets/images/janviereric.jpg";
+import logo from "/assets/images/logo.jpg";
 
 export const header = () => {
   const headerContent = document.querySelector("header");
@@ -7,7 +6,7 @@ export const header = () => {
     <div id="container-header">
       <div class="container-logo">
         <div class="logo-image">
-            <img src="${janviereric}" alt="Janvier Eric" />
+            <img src="${logo}" alt="Janvier Eric" />
         </div>
         <div class="logo-name"><span class="text-menu">JanvierEric</span></div>
       </div>
@@ -20,3 +19,5 @@ export const header = () => {
     </div>
   `;
 };
+
+header();

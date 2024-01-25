@@ -2,44 +2,13 @@
 
 header {
   color: var(--light);
-  @include phone {
-    background-color: var(--primary);
-  }
-  @include tablet {
-    background-color: var(--primary);
-  }
-  @include laptop {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-  @include computer {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  background-color: var(--primary);
   #container-header {
     height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
-    @include laptop {
-      padding-right: 1rem;
-      padding-left: 1rem;
-      margin-top: 1rem;
-      border: 0.2rem var(--primary) solid;
-      border-radius: 0.5rem;
-    }
-    @include computer {
-      width: 120rem;
-      position: fixed;
-      margin-top: 7rem;
-      border: 0.2rem var(--primary) solid;
-      border-radius: 0.5rem;
-    }
     .container-logo {
       display: flex;
       align-items: flex-end;
@@ -53,20 +22,17 @@ header {
       @include phone {
         width: 3.5rem;
       }
-      @include tablet {
-        display: 3.5rem;
-      }
       .logo-image {
         img {
           height: 2.5rem;
           width: 2.5rem;
-          border: 0.1rem var(--light) solid;
+          border: 0.1rem var(--tertiary) solid;
           float: right;
         }
       }
       &:hover {
         transition: all 0.2s;
-        background-color: var(--light);
+        background-color: var(--tertiary);
         color: var(--je);
         img {
           border: 0.1rem var(--primary) solid;
@@ -78,7 +44,6 @@ header {
         }
       }
     }
-
     #container-menu {
       display: flex;
       justify-content: space-evenly;
@@ -97,7 +62,7 @@ header {
       }
       li:hover {
         transition: all 0.2s;
-        background-color: var(--light);
+        background-color: var(--tertiary);
         color: var(--dark);
         border-radius: 0.3rem;
         .icon-frontend {
