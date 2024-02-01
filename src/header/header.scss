@@ -1,4 +1,4 @@
-@use "./media-queries" as *;
+@use "../assets/sass/media-queries" as *;
 
 header {
   color: var(--light);
@@ -9,7 +9,7 @@ header {
     align-items: center;
     justify-content: space-between;
     font-weight: bold;
-    .container-logo {
+    #button-home {
       display: flex;
       align-items: flex-end;
       width: 12rem;

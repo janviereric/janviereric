@@ -1,3 +1,4 @@
+import "./footer.scss";
 import logo from "/assets/images/logo.jpg";
 
 export const footer = () => {
