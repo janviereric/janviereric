@@ -1,8 +1,4 @@
 import "./fullstack.scss";
-import { header, footer } from "../index.js";
-
-header();
-footer();
 
 export const fullstack = () => {
   const main = document.querySelector("main");

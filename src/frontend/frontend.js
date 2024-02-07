@@ -1,8 +1,4 @@
 import "./frontend.scss";
-import { header, footer } from "../index.js";
-
-header();
-footer();
 
 export const frontend = () => {
   const main = document.querySelector("main");
